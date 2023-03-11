@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Min webbsida</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header>
+       
+        <nav>
+            <ul>
+                <li><a href="#">Hem</a></li>
+                <li><a href="#">Om</a></li>
+                <li><a href="#">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+<h1>Min webbsida</h1>
+<label for="cityFilter">Filtrera efter stad:</label>
+<input type="text" id="cityFilter" onkeyup="filterData()">
+<ul id="output"></ul>
+
+<form onsubmit="addData(); return false;">
+    <label for="nameInput">Namn:</label>
+    <input type="text" id="nameInput" required>
+    <label for="ageInput">Ålder:</label>
+    <input type="number" id="ageInput" required>
+    <label for="cityInput">Stad:</label>
+    <input type="text" id="cityInput" required>
+    <button type="submit">Lägg till</button>
+</form>
+    </main>
+    <footer>
+        <p>&copy; 2023 Min webbsida</p>
+    </footer>
+        <script src="script.js"></script>
+</body>
+
+</html>
